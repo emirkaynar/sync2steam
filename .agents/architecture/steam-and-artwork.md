@@ -73,7 +73,7 @@ Use the same executable's headless dispatch mode from a user-chosen durable path
 | Unknown | Rescan this product once. If still unknown offer its verified client page or an actionable error. |
 | Launcher missing or auth expired | Explain the missing requirement. Offer an allowlisted official download page or the provider's sign-in experience; never download and execute an installer. Keep a forced source selection. |
 
-Start with static art, an appropriate aspect ratio and manual per-slot pinning. Add style, language or animation filters only when the upstream fields support them. Do not equate provider ranking with official publisher art. Preserve user logos and their position. Proposed initial disposable cache cap is 512 MiB, user-adjustable; evict least recently used unpinned content and report pinned bytes separately. The five slots can approximate native presentation but do not create achievements, native ownership, store association or native install management.
+Start with static art, an appropriate aspect ratio and manual per-slot pinning. Add style, language or animation filters only when the upstream fields support them. Do not equate provider ranking with official publisher art. Preserve user logos and their position. Bound disposable cache storage and measure a representative artwork workload before setting its cap and eviction policy. The five slots can approximate native presentation but do not create achievements, native ownership, store association or native install management.
 
 ## Acceptance evidence
 

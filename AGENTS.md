@@ -11,7 +11,22 @@ Sync2Steam is a native Windows utility that publishes selected external games as
 - Desktop UI · [UI standards](.agents/standards/ui.md)
 - Code, security and testing · [Engineering standards](.agents/standards/engineering.md)
 
-Agent references and source research live in `.agents/`. Contributor guides and the roadmap live in `docs/`. The project uses the [MIT License](LICENSE).
+## Commands once the workspace exists
+
+Provisional Windows checks for the planned workspace:
+
+```powershell
+cargo fmt --all -- --check
+cargo clippy --workspace --all-targets --locked -- -D warnings
+cargo test --workspace --locked
+cargo build --release --locked -p sync2steam-app
+```
+
+## Completion and uncertainty
+
+A task is done when its scoped behavior works through the intended entry point, applicable checks pass and its roadmap acceptance evidence is recorded. For documentation changes, check links and consistency. Claim client compatibility only after the relevant disposable-client trial passes.
+
+When sources disagree or an API or file format is unclear, pause the affected operation and continue independent work. Add a short spike note to the relevant research page with the conflicting evidence, revisions, smallest safe experiment and outcome or blocker. Never guess a Steam write format or a store authorization flow. Ask the maintainer when a decision changes product scope, requires real account access or risks user data.
 
 ## Guardrails
 
